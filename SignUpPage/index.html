@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h1>Create your account</h1>
+            <p>Sign up to access the practice dashboard.</p>
+
+            <div class="row">
+                <div class="field">
+                    <label>First name:</label>
+                    <input type="text" placeholder="Enter First Name" required>
+                </div>
+                <div class="field">
+                    <label>Last Name:</label>
+                    <input type="text" placeholder="Enter Last Name" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Email Address:</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Password:</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                </div>
+                <div class="field">
+                    <label>Confirm Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+            </div>
+
+            <p class="hint">Use at least 8 characters, with letter & number</p>
+
+            <label class="checkbox">
+                <input type="checkbox" required> 
+                <span>I agree to the Terms</span>
+            </label>
+
+            <button type="submit" id="createAccountBtn">Create Account</button>
+
+            <p class="footer">Already have account? <a href="../LoginPage/index.html">Sign in</a></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

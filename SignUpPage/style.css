@@ -1,0 +1,120 @@
+body {
+    background-color:#F1F3F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    width: 450px;
+    box-shadow: 0px -4px 0px #40C4AA ;
+    border: 3px solid #fcfcfc;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.field {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #4ECDC4;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4ECDC4;
+}
+
+
+.hint {
+    font-size: 11px;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 20px;
+    color: #333;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #4ECDC4;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #4ECDC4;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+
+button:hover {
+    background: #35a892;
+    box-shadow: 0 4px 10px rgba(64, 196, 170, 0.3);
+}
+
+.footer {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.footer a {
+    color: #4ECDC4;
+    text-decoration: none;
+    font-weight: 600;
+}
