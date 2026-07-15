@@ -1,0 +1,227 @@
+:root {
+    --primary: #2ebfa5;
+    --bg: #f4f7f8;
+    --text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: var(--bg);
+    height: 100vh;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    border-right: 1.5px solid #00f2e0;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    background: #0d1e43;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.divider {
+    position: relative;
+    left: -20px;
+    width: calc(100% + 20px);
+    height: 1px;
+    background-color: #00f2e0;
+    margin: 10px 0 20px 0;
+}
+
+.nav-title {
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 10px 12px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    padding: 12px 20px;
+    margin: 4px 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
+.nav-item:hover {
+    background-color: #f3f4f6;
+}
+
+.nav-item.active {
+    background-color: #f9fdfd;
+    border: 1.5px solid #b3f5ed;
+    border-left: 3px solid var(--primary);
+    color: #445251;
+    font-weight: 600;
+}
+
+.sidebar-down {
+    padding-top: 180px;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header.web {
+    background: #0d1e43;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.form-card {
+    background: #fff;
+    margin: 30px;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #2cf6e5;
+    border-top: 6px solid #2cf6e5;
+}
+
+.form-card h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+.form-card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.pref-box, .activity-box {
+    background: #fff;
+    border: 2px solid #2cf6e5;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(46, 191, 165, 0.2);
+}
+
+.pref-box label, .activity-box span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.activity-time {
+    font-size: 12px;
+    color: #777;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #333;
+}
+
+.section-subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.pref-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* --- everything above this line is unchanged from your Notification page CSS --- */
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.faq-box {
+    background: #f4f7f8;
+    border: 1.5px solid #b3f5ed;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.faq-box h4 {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.faq-box p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.contact-header {
+    margin-top: 10px;
+}
+
+.contact-text {
+    font-size: 14px;
+    color: #555;
+}
+.sidebar-down {
+    margin-top: auto;   /* pushes this block to the bottom of the flex column */
+    padding-top: 0;
+}
